@@ -2,3 +2,33 @@ c#
 string 转json
  string EQP_ID = messageEntity.BODY.ToString();
 JObject json1 = (JObject)JsonConvert.DeserializeObject(EQP_ID);
+
+
+
+
+
+标签 可拉伸 --用于布局或设计
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>div实现textarea效果</title>
+    <style>
+      #textarea {
+        height: 200px;
+        width: 300px;
+        padding: 4px;
+        border: 1px solid #888;
+        resize: both;
+        overflow: auto;
+      }
+ 
+      #textarea:empty:before {
+        content: attr(placeholder);
+        color: #bbb;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="textarea" contenteditable="true" placeholder="请输入内容..."></div>
+  </body>
+</html>
